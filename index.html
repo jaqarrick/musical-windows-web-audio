@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Musical Windows</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logos/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>  
+  <body>
+    <div id="splash">
+      <div id="splash-text"> 
+        <span id="welcome"> Welcome to Musical Windows! <br> 
+        Create your own rhythms! <br> 
+        Experment with effects and scales! <br>
+        Have fun!</span>
+        <br><br>
+        <span id="click"> Click to begin </span>
+        <br><br><br>
+        <span id="warning"> *** this site displays flashing lights and colors *** </span>
+      </div>
+    </div>
+    <div id="top-container">
+      <div id="reset-button-container">
+        <button id="reset">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M5.115 3.515c4.617-4.618 12.056-4.676 16.756-.195l2.129-2.258v7.938h-7.484l2.066-2.191c-2.82-2.706-7.297-2.676-10.073.1-4.341 4.341-1.737 12.291 5.491 12.291v4.8c-3.708 0-6.614-1.244-8.885-3.515-4.686-4.686-4.686-12.284 0-16.97z"/></svg>        </button>
+      </div>
+      <div id="display">
+        <button id="scale-display">
+        </button>
+        <div id="scale-list">
+        </div>
+      </div>
+    </div>
+    <div class="column" id="column1">
+    </div>
+    <div class="column" id="column2">
+    </div>
+    <div class="column" id="column3">  
+    </div>
+    <div id="bottom-container">
+      <div id="arrow-container"> 
+        <div id="arrow">
+        &#8593 
+        </div>
+      </div>
+      <div id="options-container">
+        <div class="option">
+          <div class="option-header"> Sine </div>
+          <div class="slide-container">
+            <span class="slide-text"> Reverb </span> 
+            <input type="range" min="0" max="100" value="0" class="slide" id="reverb1">
+          </div>
+          <div class="slide-container">
+            <span class="slide-text"> Volume </span>
+            <input type="range" min="0" max="100" value="0" class="slide" id="volume1">
+          </div>
+        </div>
+        <div class="option">
+          <div class="option-header"> Sawtooth </div>
+          <div class="slide-container">
+            <span class="slide-text"> Reverb </span> 
+            <input type="range" min="0" max="100" value="0" class="slide" id="reverb2">
+          </div>
+          <div class="slide-container">
+            <span class="slide-text"> Volume </span>
+            <input type="range" min="0" max="100" value="50" class="slide" id="volume2">
+          </div>
+        </div>
+        <div class="option">
+          <div class="option-header"> Triangle </div>
+          <div class="slide-container">
+            <span class="slide-text"> Reverb </span> 
+            <input type="range" min="0" max="100" value="0" class="slide" id="reverb3">
+          </div>
+          <div class="slide-container">
+            <span class="slide-text"> Volume </span>
+            <input type="range" min="0" max="100" value="50" class="slide" id="volume3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="teoria.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
